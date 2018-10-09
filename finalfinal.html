@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+demo1
+</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
+<link href="finalfinal.css" rel="stylesheet">
+</head>
+
+<body class="main">
+<div class="wrapper">
+<div class="header"></div>
+<!--<div class="searchbar"><input type="text" size="20px"></div>-->
+<div class="signup"><a href="http://localhost/show.php">logout</a></div>
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+ 
+  <img src="s1.jpeg" style="width:100%;height:700px;">
+  
+</div>
+
+<div class="mySlides fade">
+
+  <img src="s2.jpeg" style="width:100%;height:700px;">
+  
+ 
+</div>
+
+<div class="mySlides fade">
+  
+    <img src="s3.jpg" style="width:100%;height:700px;">
+
+  
+</div>
+
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+
+<!--
+<div class="topslider">
+
+<img src="ii1.jpg" style="width:100%;height:700px;">
+
+</div>-->
+
+<!--<div class="godown"><button type="button">Discover More</button></div>-->
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="subpage.html">Italy</a>
+    <a href="spain/spainadi.html">Spain</a>
+    <a href="uk1/subpage.html">UK</a>
+    <a href="ger-subpage.html">Germany</a>
+	<a href="bon/subpage.html">France</a>
+  </div>
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("myNav").style.display = "block";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.display = "none";
+}
+</script>
+
+
+<div id="myNav1" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+  <div class="overlay-content">
+    <h2>This Project is Created By Beta Bots For Itws1 Lab Evaluation</h2><br>
+	<h3>Our group Members Are</h3><br>
+	<h2>Aditya Ramesh</h2>
+	<h2>Pavan Anand</h2>
+	<h2>Chanracanth</h2>
+	<h2>Tarunaditya</h2>
+	<h2>Santosh</h2>
+  </div>
+</div>
+
+<script>
+function openNav1() {
+    document.getElementById("myNav1").style.display = "block";
+}
+
+function closeNav1() {
+    document.getElementById("myNav1").style.display = "none";
+}
+</script>
+
+
+<div class="subheader"><br>
+<ul>
+<!--<li><a href="#" class="sub_11">Destinations</a></li>-->
+<li><span class="sub_11" onclick="openNav()">Destinations</span></li>
+<li><a href="#tst1" class="sub_1">Testimonials</a></li>
+<li><a href="#" class="sub_1" onclick="openNav1()">About</a></li>
+</ul>
+</div>
+
+<!--<div class="searchbar"><input type="text" size="20px"></div>-->
+<!--<di																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														v class="topimg"><img src="bonvoyage.png"></div>-->
+
+
+<!--<div class="place">
+
+<a href="#" class="aa">Places to Go</a>
+
+</div>
+
+<div class="but2">
+<a href="#">Itineraries</a>
+</div>
+<div class="but3">
+<a href="#">Plan Your Trip</a>
+</div>
+<div class="but4">
+<a href="#">More Info</a>
+</div>-->
+
+
+
+<div class="tagline">
+<h3>Begin Your Adventure</h3>
+<h1>WE'LL TAKE CARE OF THE REST</h1>
+</div>
+<!--<div class="taglinetxt1">
+<p>Begin Your Adventure</p>
+</div>
+<div class="taglinetxt2">
+<p>WE'LL TAKE CARE OF THE REST</p>
+</div>-->
+
+<div class="suggslider">
+<!--<img src="t1e.jpeg" style="position:absolute;margin-left:50px;">-->
+</div>
+
+<div class="sugg1">
+<img src="show1.jpeg" style="height:600px;width:100%">
+</div>
+<div class="img_fonts">
+<center><p>Passionate, sophisticated and devoted to living the good life, Spain is both a stereotype come to life and a country more diverse than you ever imagined. . . </p></center>
+<a href="spain/spainadi.html" >Discover</a>
+</div>
+<div class="sugg1_font">
+	<h1 style="font-family: 'Permanent Marker', cursive;font-size:200px;margin-bottom20px;"><center><span style="color:#C60B1E;">Sp</span><span style="color:#FFC400;">a</span><span style="color:#C60B1E;">in</span></center> </h1>
+</div>
+<div class="sugg2"><img src="show2.jpeg" style="height:400px;width:75%;float:right;"></div>
+<div class="sugg2_font">
+	<h1 style="font-family:'Permanent Marker',cursive;font-size:200px;margin-bottom20px;"><center><span style="color:#016F4A;">It</span><span style="color:#d9d9d9;">a</span><span style="color:#C51230;">ly</span></h1>
+</div>
+<div class="sugg3"><img src="show3.jpeg" style="height:600px;width:100%"></div>
+<div class="sugg3_font">
+	<h1 style="font-family:'Permanent Marker',cursive;font-size:200px;margin-bottom20px;"><center><span style="color: #00247D;">U</span><span style="color:#CF142B;">K</span></center></h1>
+</div>
+<div class="img_fontu">
+<center><p>Uncover the hidden gems that lie beneath the hustle and bustle, from quiet afternoons in secret gardens to shopping on hidden cobbled streets . . . </p></center>
+<a href="uk1/subpage.html" >Discover</a>
+</div>
+<div class="sugg4"><img src="show4.jpeg" style="height:500px;width:75%"></div>
+<div class="sugg4_font">
+	<h2 style="font-family:'Permanent Marker',cursive;font-size:200px;margin-bottom20px;"><center><span style="color: #000066;">Fr</span><span style="color:#b3b3b3;">an</span><span style="color:#ED2939;">ce</span></h2>
+</div>
+<div class="sugg5"><img src="show5.jpeg" style="height:600px;width:100%"></div>
+<div class="sugg5_font">
+	<h2 style="font-family:'Permanent Marker',cursive;font-size:200px;margin-bottom20px;"><center><span style="color: #000000;">Ge</span><span style="color:#dd0000;">rm</span><span style="color:#FFCE00;">any</span></h2>
+</div>
+<div class="img_fontg">
+<center><p>History, culture, and natural beauty perhaps best describe the essence of vacationing in Germany. With its historic cities and small towns, along with an abundance of forests and mountains, visitors are spoiled for choice. . . .</p></center>
+<a href="ger-subpage.html" >Discover</a>
+</div>
+<!--<div class="sugg1_1"></div>-->
+<div class="sugg2_1">
+<br>
+<br>
+<h1>
+Visit Italy And Get Lost In The Amazing Heritage And Fingerlicking Food.
+</h1>
+<a href="subpage.html" >Discover</a>
+</div>
+<!--<div class="sugg3_1"></div>-->
+<div class="sugg4_1">
+<br>
+<br>
+<h3>
+Sure, everyone knows about the Eiffel Tower and the Louvre, but what else does France have to offer? Explore the world's top vacation destination!
+</h3>
+<a href="bon/subpage.html" >Discover</a>
+</div>
+<!--<div class="sugg5_1"></div>-->
+
+<!-- <div id="map" class="maps"></div>
+
+<script>
+function myMap() {
+	var mapOptions = {
+center: new google.maps.LatLng(48.8566,2.3522),
+	zoom: 4,
+	mapTypeId: google.maps.MapTypeId.HYBRID;
+	}
+	var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=&callback=myMap"></script>
+<script async defer  src="https://maps.googleapis.com/maps/api/js?client=AIzaSyCoBzhcqM8kiWiQ4ehWpsiJMGF3EPgjfSk&v=3.29&callback=initMap"></script>-->
+
+
+<div id="map" class="maps"></div>
+<div class="tst">
+<br><br><br>
+<iframe width="300" height="200" style = "margin-right:0px;margin-left:90px;" src="https://www.youtube.com/embed/pJA3cMy6uhw" frameborder="0" gesture="media" allowfullscreen></iframe>
+<iframe width="300" height="200" style = "margin-right:60px;margin-left:60px;" src="https://www.youtube.com/embed/kT-0W78imU8" frameborder="0" gesture="media" allowfullscreen></iframe>
+<iframe width="300" height="200" src="https://www.youtube.com/embed/UnKJL_ifwkk" frameborder="0" gesture="media" allowfullscreen></iframe> 
+
+</div>
+<div class="tstfont">
+<h1 style="text-align:center;text-decoration:underline;font-family: 'Luckiest Guy', cursive;">Our Testimonials</h1>
+</div>
+
+
+ <!--<div class="footer"> <table>
+  <tr>
+  <td class="b1"><br> <center> <img src="3.png" width="200px" height="150px"><br> Created by Beta bots<br>Call Us On:<br>8379657997 </center></td>
+  <td class="b2"><center><br><a href="subpage.html" class="a1"> HOME</a> <br> <br><a href="ptv.html" class="a2"> PLACES</a> <br> <br> <a href="food.html" class="a3">FOOD </a><br><br> <a href="pi.html" class="a4">INFO</a> <br><br><a href="https://www.google.com" class="a4"> LOGOUT </a></center></td>
+  <td class="b3">FOLLOW US ON<br><br>
+  <table style="border-collapse:collapse;">
+  <tr><td style="border-collapse:collapse;"><a href="https://www.facebook.com/"><img src="f.png" height="40px" width="40px"></a></td>
+  			<td style="border-collapse:collapse;"><a href="https://twitter.com/login"><img src="t.png" height="40px" width="40px"></a></td>
+  </tr>
+   <tr><td style="border-collapse:collapse;"><a href="https://www.instagram.com/?hl=en"><img src="i.png" height="40px" width="40px"></a></td>
+   		<td style="border-collapse:collapse;"><a href="https://in.pinterest.com/"><img src="p.png" height="40px" width="40px"></a></td>
+   </tr>
+   </table>
+   </td>
+  <td class="b4"><br> We always want your <br>feedback <br><br>
+  <form><input type="textbox" placeholder="Type here..." ><br><br>
+  				<input type="email" placeholder="Your email..."><br>
+  				<input type="button" value="Submit"> 
+  	</form></td>  
+  </tr>
+  </table>
+   </div>
+-->
+
+
+
+
+
+
+<script>
+function initMap() {
+	var uluru = {lat:48.8566 , lng:2.3522 };
+	var map = new google.maps.Map(document.getElementById('map'), {zoom: 4,center: uluru});
+    var marker = new google.maps.Marker({position: uluru,map: map,animation: google.maps.Animation.BOUNCE});
+
+	var uluru1 = {lat:51.509865 , lng:-0.118092 };
+    var marker1 = new google.maps.Marker({position: uluru1,map: map,animation: google.maps.Animation.BOUNCE});
+    
+	var uluru2 = {lat:52.520008 , lng:13.404954 };
+    var marker2 = new google.maps.Marker({position: uluru2,map: map,animation: google.maps.Animation.BOUNCE});
+	
+	var uluru3 = {lat:41.906204 , lng:12.507516 };
+    var marker3 = new google.maps.Marker({position: uluru3,map: map,animation: google.maps.Animation.BOUNCE});
+    
+    var uluru4 = {lat:40.416775 , lng:-3.703790 };
+    var marker4 = new google.maps.Marker({position: uluru4,map: map,animation: google.maps.Animation.BOUNCE});
+}
+</script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoBzhcqM8kiWiQ4ehWpsiJMGF3EPgjfSk&callback=initMap">
+</script>
+
+
+
+
+
+
+<!--<div class="footer"> <table>
+<tr>
+<td class="b1"><br> <center> <img src="3.png" width="200px" height="150px"><br> Created by Beta bots<br>Call Us On:<br>8379657997 </center></td>
+<td class="b2"><center><br><a href="https://www.google.com" class="a1"> HOME</a> <br> <br><a href="https://www.google.com" class="a2"> PLACES</a> <br> <br> <a href="https://www.google.com" class="a3">FOOD </a><br><br> <a href="https://www.google.com" class="a4">INFO</a> <br><br><a href="https://www.google.com" class="a4"> LOGOUT </a></center></td>
+<td class="b3">FOLLOW US ON<br><br>
+<table style="border-collapse:collapse;">
+<tr><td style="border-collapse:collapse;"><a href="https://www.facebook.com/"><img src="f.png" height="40px" width="40px"></a></td>
+<td style="border-collapse:collapse;"><a href="https://twitter.com/login"><img src="t.png" height="40px" width="40px"></a></td>
+</tr>
+<tr><td style="border-collapse:collapse;"><a href="https://www.instagram.com/?hl=en"><img src="i.png" height="40px" width="40px"></a></td>
+<td style="border-collapse:collapse;"><a href="https://in.pinterest.com/"><img src="p.png" height="40px" width="40px"></a></td>
+</tr>
+</table>
+</td>
+<td class="b4"><br> We always want your <br>feedback <br><br>
+<form><input type="textbox" placeholder="Type here..." ><br><br>
+<input type="email" placeholder="Your email..."><br>
+<input type="button" value="Submit"> 
+</form></td>  
+</tr>
+</table>
+</div>
+
+</div>-->
+
+</body>
+</html>

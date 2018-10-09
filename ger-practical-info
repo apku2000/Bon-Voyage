@@ -1,0 +1,709 @@
+<!doctype html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+<style>
+	body
+		{
+		 /*background-color:#dd9ff5;*/
+		 background-image:url("guddu.jpeg");
+		 
+		 background-repeat: no-repeat;
+		 background-attachment: fixed;
+		}
+	.header 
+	        {
+                 grid-column: 1 / 5;
+                 grid-row: 1 / 2;
+                 color:white;
+                 font-size:30px;
+                 font-family: 'Gloria Hallelujah', cursive;
+                 background-color:#34084b;
+                 border-radius:130px;
+                }
+	.a1,.a2,.a3,.a4
+	        {
+                 text-decoration:none;
+                 color:white;
+                }
+
+        .a1:hover,.a2:hover,.a3:hover,.a4:hover       
+                {
+                 color:#e6d911;
+                }
+                
+	     .pav
+	     {
+	       font-family: 'Satisfy', cursive;
+	       font-size:100px;
+	       color:#7c0f25;
+	       text-align:right;
+	     }
+	
+	.topimguk
+		{
+		 display:grid;
+		 grid-template-columns:repeat(12,1fr);
+		 grid-auto-rows:minmax(400px,auto);
+		}
+	.topimg1uk
+		{
+		 border-radius:200px;
+		 grid-column:2/12;
+		 grid-row:1/1;
+		}
+	.body1uk
+		{
+		 display:grid;
+		 grid-template-columns:repeat(20,1fr);
+		 grid-auto-rows:minmax(50px,auto);
+		}
+	.oneuk
+		{
+		 font-family: 'Satisfy', cursive;
+		 color:#ffffff;
+		 background:linear-gradient(#3c1099,#e10ec1);
+		 box-shadow: 0 0 10px 10px #333333;
+		 grid-column:3/13;
+		 grid-row:2/10;
+		}
+	.oneimguk
+		{
+		 
+		 grid-column:10/17;
+		 grid-row:7/13;
+		}
+	#oneinfouk
+		{
+		 font-family: 'Satisfy', cursive;
+		 color:#ffffff;
+		 background:linear-gradient(#3c1099,#46336d);
+		 box-shadow: 0 0 10px 10px #333333;
+		 grid-column:17/20;
+		 grid-row:5/7;
+		}
+	#onemoreinfouk
+		{
+		 font-family: 'Satisfy', cursive;
+		 color:#ffffff;
+		 background:linear-gradient(#3c1099,#e10ec1);
+		 box-shadow: 0 0 10px 10px #333333;
+		 grid-column:3/19;
+		 grid-row:2/14;
+		}
+	.twouk
+		{
+		 text-align:left;
+		 font-family: 'Satisfy', cursive;
+		 color:#ffffff;
+		 background:linear-gradient(#3c1099,#e10ec1);
+		 box-shadow: 0 0 10px 10px #333333;
+		 grid-column:9/19;
+		 grid-row:16/24;
+		}
+	.twoimguk
+		{
+		 
+		 grid-column:5/12;
+		 grid-row:21/27;
+		}
+	#twoinfouk
+		{
+		 font-family: 'Satisfy', cursive;
+		 color:#ffffff;
+		 font-size:1;
+		 background:linear-gradient(#3c1099,#46336d);
+		 box-shadow: 0 0 10px 10px #333333;
+		 grid-column:2/5;
+		 grid-row:19/21;
+		}
+	#twomoreinfouk
+		{
+		 font-family: 'Satisfy', cursive;
+		 color:#ffffff;
+		 background:linear-gradient(#3c1099,#e10ec1);
+		 box-shadow: 0 0 10px 10px #333333;
+		 grid-column:3/19;
+		 grid-row:15/27;
+		}
+	.threeuk
+		{
+		 font-family: 'Satisfy', cursive;
+		 color:#ffffff;
+		 background:linear-gradient(#3c1099,#e10ec1);
+		 box-shadow: 0 0 10px 10px #333333;
+		 grid-column:3/13;
+		 grid-row:30/38;
+		}
+	.threeimguk
+		{
+		 grid-column:15/22;
+		 grid-row:35/41;
+		}
+	#threeinfouk
+		{
+		 font-family: 'Satisfy', cursive;
+		 color:#ffffff;
+		 background:linear-gradient(#3c1099,#46336d);
+		 box-shadow: 0 0 10px 10px #333333;
+		 grid-column:17/20;
+		 grid-row:33/35;
+		}
+	#threemoreinfouk
+		{
+		 font-family: 'Satisfy', cursive;
+		 color:#ffffff;
+		 background:linear-gradient(#3c1099,#e10ec1);
+		 box-shadow: 0 0 10px 10px #333333;
+		 grid-column:3/19;
+		 grid-row:29/41;
+		}
+	.fouruk
+		{
+		 text-align:left;
+		 font-family: 'Satisfy', cursive;
+		 color:#ffffff;
+		 background:linear-gradient(#3c1099,#e10ec1);
+		 box-shadow: 0 0 10px 10px #333333;
+		 grid-column:9/19;
+		 grid-row:44/52;
+		}
+	.fourimguk
+		{
+		 
+		 grid-column:5/12;
+		 grid-row:49/55;
+		}
+	#fourinfouk
+		{
+		 font-family: 'Satisfy', cursive;
+		 color:#ffffff;
+		 font-size:1;
+		 background:linear-gradient(#3c1099,#46336d);
+		 box-shadow: 0 0 10px 10px #333333;
+		 grid-column:2/5;
+		 grid-row:47/49;
+		}
+	#fourmoreinfouk
+		{
+		 font-family: 'Satisfy', cursive;
+		 color:#ffffff;
+		 background:linear-gradient(#3c1099,#e10ec1);
+		 box-shadow: 0 0 10px 10px #333333;
+		 grid-column:3/19;
+		 grid-row:44/56;
+		}
+	.fiveuk
+		{
+		 font-family: 'Satisfy', cursive;
+		 color:#ffffff;
+		 background:linear-gradient(#3c1099,#e10ec1);
+		 box-shadow: 0 0 10px 10px #333333;
+		 grid-column:3/13;
+		 grid-row:58/66;
+		}
+	.fiveimguk
+		{
+		 grid-column:13/20;
+		 grid-row:63/69;
+		}
+	#fiveinfouk
+		{
+		 font-family: 'Satisfy', cursive;
+		 color:#ffffff;
+		 background:linear-gradient(#3c1099,#46336d);
+		 box-shadow: 0 0 10px 10px #333333;
+		 grid-column:17/20;
+		 grid-row:61/63;
+		}
+	#fivemoreinfouk
+		{
+		 font-family: 'Satisfy', cursive;
+		 color:#ffffff;
+		 background:linear-gradient(#3c1099,#e10ec1);
+		 box-shadow: 0 0 10px 10px #333333;
+		 grid-column:3/19;
+		 grid-row:58/70;
+		}
+	.sixuk
+		{
+		 text-align:left;
+		 font-family: 'Satisfy', cursive;
+		 color:#ffffff;
+		 background:linear-gradient(#3c1099,#e10ec1);
+		 box-shadow: 0 0 10px 10px #333333;
+		 grid-column:9/19;
+		 grid-row:72/80;
+		}
+	.siximguk
+		{
+		 
+		 grid-column:5/12;
+		 grid-row:77/83;
+		}
+	#sixinfouk
+		{
+		 font-family: 'Satisfy', cursive;
+		 color:#ffffff;
+		 font-size:1;
+		 background:linear-gradient(#3c1099,#46336d);
+		 box-shadow: 0 0 10px 10px #333333;
+		 grid-column:2/5;
+		 grid-row:75/77;
+		}
+	#sixmoreinfouk
+		{
+		 font-family: 'Satisfy', cursive;
+		 color:#ffffff;
+		 background:linear-gradient(#3c1099,#e10ec1);
+		 box-shadow: 0 0 10px 10px #333333;
+		 grid-column:3/19;
+		 grid-row:72/84;
+		}
+	.footer
+	        {
+                 grid-column: 1 / 5;
+                 grid-row: 9 / 11;
+                 background-color:#34084b;
+                 border-radius:35px;
+                }
+
+        .b1,.b2,.b3,.b4
+                {
+                 color:white;
+                 width:320px;
+                 font-family: 'Ubuntu Condensed', sans-serif;
+                 font-size:25px;
+                }
+
+</style>
+</head>
+<body>
+
+        <div class="header">
+                <table>
+                        <tr>
+                                <td><center><img src="3.png" width="250px" height="200px"></center></td><td colspan="2">
+                                <center><a href="https://www.google.com" class="a1">HOME</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+                                        <a href="https://twitter.com/login" class="a2">PLACES&nbsp;&nbsp;</a>|&nbsp;&nbsp;
+                                        <a href="https://www.facebook.com/" class="a3">FOOD&nbsp;&nbsp;</a>|&nbsp;&nbsp; 
+                                        <a href="https://en.wikipedia.org/wiki/Main_Page" class="a4">INFO</a>&nbsp;&nbsp;|&nbsp;&nbsp; 
+                                        <a href="https://en.wikipedia.org/wiki/Main_Page" class="a4">LOGOUT</a></center>
+                                </td>
+                        </tr>
+                </table>
+        </div> <br><br>
+	
+        <div class="pav">Practical Info&nbsp;&nbsp;&nbsp;</div>
+                <br><br>
+	</div>
+	<div class="body1uk" background-color="black">
+		<div class="oneuk">
+		<h1>Best time to go to Germany</h1>
+<h2><pre>Summer is the best time to visit Germany,
+Spring and autumn are also good options, particularly 
+the months of May and September when there is little rainfall 
+and the temperatures are agreeable.Winter should be avoided: 
+Severe cold in certain areas, frequent snow, fog and rain means 
+this truly is not the best time to explore the country!.</pre></h2>
+		</div>
+
+		<div class="oneimguk">
+		<img src="germ-when to go-thumb.png" height="300px" width="100%">
+		</div>
+
+		<div id="oneinfouk" onmouseover="one();" text-align="center">
+		<h2>MORE INFO......</h2>
+		</div>
+		<div id="onemoreinfouk" style="display:none;" onmouseout="one1();">
+<h2><pre>
+Christmas Markets
+
+It's cold and dark in Germany in December, but for many Germans, it's the best time of year. 
+The city of Nuremberg's "Christkindelsmarkt," or Christmas Market, is a world-renowned attraction,
+featuring stalls of handmade wooden toys, Christmas angels, mulled wine and the foods that make Germany famous, including bratwurst and goulash. Other cities also have Christmas markets, but none are quite as elaborate or traditional as Nuremberg's.
+If you like winter sports, the surrounding hills of the state of Bavaria will provide plenty of opportunities 
+for skiing, snowshoeing and sipping mugs of warm milk in a cozy gasthaus -- the German equivalent of a bed and breakfast.
+
+The Warm Season
+
+Germany's weather can be relatively cold in the winter, but summer is definitely the time 
+when the weather is the finest. From May to September, expect warm days with the 
+possibility of an occasional rain storm. Also expect to delight in many colorful flowers 
+in the quaint home gardens in the villages, as well as the vast gardens of the "Schloss," 
+or castle you're almost certain to find in every larger city. With the fine weather, 
+however, comes the high tourist season, so expect the prices to go up and the availability of accommodations to go down.
+
+Oktoberfest
+
+Oktoberfest may be the best or the worst time to visit Germany, depending on how you look at it.
+ With the influx of millions of tourists hoping to take part in the world's largest beer festival, 
+Munich and its surrounding environs can be really, really hectic from mid-September to mid-October. T
+If you're not a fan of battling crowds of any size, your best bet is visiting Germany during the 
+"shoulder seasons" from March through May and from late October through November. The weather may be a bit chilly,
+ but you'll enjoy lower prices and fewer crowds. Some of the highlights of the shoulder seasons include Maifest 
+in May, a May Day-like festival with colorful costumes, and Rhein in Flammen, or Rhein in Flames, 
+featuring fireworks displays over many villages of the Rhein River.</pre></h2>
+		</div>
+
+		<div class="twouk">
+		<h2>TABLE MANNERS</h2>
+<h2>
+<pre>
+
+Never eat with your fingers in Germany. Only bread is permitted to be broken by hand. 
+Even pizza and fries are eaten with a fork, so watch out!
+Place your hands on the table while eating (not the elbows).
+ Moreover, don't let your hand rest on your lap while eating. 
+Nevertheless, it is not that great a sin even if your hand slips to your lap.
+Do not begin eating, until your host says 'guten appetit', which means good appetite or 'bon appetit',
+which means enjoy your meal.
+Placing your knife and fork side by side, indicates you are done with your meal. If you place them crossed,
+it means you haven't finished with the meal.
+
+
+                     Restaurant Etiquette
+
+                     When dining at a posh restaurant, you need to wait to be escorted and seated. 
+                     In a regular restaurant, you     can choose your table. Sharing tables is common in Germany,
+                     so if you enter a restaurant and do not find a vacant    table, join somebody. 
+                     However, make sure you ask them if you could do so. Moreover, don't strike a conversation with that person. 
+                     He or she will not appreciate the intrusion.
+                     Water has to be ordered separately and has to be paid for. Do not ask the waiter for regular tap water.
+                     Germans consider this a sign of stinginess. They serve both carbonated mineral water and still water.
+                     At the time of bill generation, the waiter will come to your table and ask 'all together' or 'separate'.
+                     This means if you want the bill divided individually or together. 
+                     This is beneficial if you are sharing a table. </pre></h2>
+		</div>
+
+		<div class="twoimguk">
+		<img src="tablemanners.jpeg" height="300px" width="100%">
+		</div>
+
+		<div id="twoinfouk" onmouseover="two();" text-align="center">
+		<h2>MORE INFO......</h2>
+		</div>
+
+		<div id="twomoreinfouk" style="display:none;" onmouseout="two1();">
+<h2>
+<pre>
+Greeting Etiquette
+
+When introduced to a person, shake hands. Never give a hug. Moreover, maintain eye contact. 
+It is considered impolite if you don't do so.When introduced to a group of people, wait for your host 
+to introduce you, then shake hands with everybody; men, women and even children. 
+Since Germans like their space, stand at an arm's distance or so from them, while conversing. 
+Moreover, avoid touching them, because this is considered as an invasion of privacy.
+As far as addressing people is concerned, never address people with the first name,
+unless specifically asked to do so. The title Herr (for men) and Frau (for women), should be used before their last name.
+While conversing in German, make sure you address the older generation by the word 'sie'.
+ Only friends refer to each other as 'du'. 'Sie' signifies respect and must be used in all formal settings, while 'du' is used as an informal tone.
+Don't greet people with 'how are you', unless you want to spend the next fifteen minutes listening to their personal problems. 
+A 'good morning' in German, like 'guten tag' will do.
+</pre></h2>
+		</div>
+
+		<div class="threeuk">
+		<h1>BASIC LANGUAGE</h1>
+<h2><pre>
+German is a West Germanic language that is mainly spoken in Central Europe.
+It is the most widely spoken and (co-) official language in Germany, Austria, Switzerland,
+South Tyrol (Italy), the German-speaking Community of Belgium, and Liechtenstein.
+It is also one of the three official languages of Luxembourg.
+The languages which are most similar to German are the other members 
+of the West Germanic language branch: Afrikaans, Dutch, English,
+the Frisian languages,Low German/Low Saxon, Luxembourgish, and Yiddish. 
+German is the second most widely spoken Germanic language,
+ after English.
+One of the major languages of the world, German is the first language of 
+about 95 million people 
+worldwide and the most widely spoken native language in the European Union.
+German also is the fourth most widely taught non-English language in the US
+(after Spanish, French and American Sign Language) and third in the EU 
+(after English and French; at lower secondary level),
+the second most commonly used scientific language as well as the
+fourth most widely used language on websites 
+(after English, Russian and Japanese).
+The German-speaking countries are ranked fifth 
+in terms of annual publication of new books,
+ with one tenth of all books (including e-books) 
+in the world being published in the German language.</pre><h2>
+		</div>
+
+		<div class="threeimguk">
+		<img src="basiclang.jpeg" height="300px" width="100%">
+		</div>
+
+		<div id="threeinfouk" onmouseover="three();" text-align="center">
+		<h2>MORE INFO......</h2>
+		</div>
+
+		<div id="threemoreinfouk" style="display:none;" onmouseout="three1();">
+<h2>
+<pre>
+Basic phrases for travellers:
+
+English - German
+
+
+
+
+
+
+
+Thank you - Danke
+Thank you very much - Vielen Dank
+You're welcome - Bitteschön
+Please - Bitte
+Yes - Ja
+No-Nein
+Excuse me - Entschuldigen Sie bitte
+Pardon me - Entschuldigung
+I'm sorry - Es tut mir leid.
+I don't understand - Das verstehe ich nicht
+I don't speak German - Ich spreche kein Deutsch
+I don't speak German very well - Ich spreche nicht sehr gut Deutsch
+Do you speak English? - Sprechen Sie Englisch?
+Speak more slowly, please -  Bitte, sprechen Sie langsam.
+Repeat, please. - Bitte wiederholen
+What's your name? - Wie heißen Sie?
+How are you?  - Wie geht es Ihnen?
+Do you speak English? - Sprechen Sie Englisch?
+Where is the subway? - Wo ist die U-Bahn?
+Is the tip included? - Ist das Trinkgeld inbegriffen?
+How much does that cost? - Wieviel kostet das?
+Is there a public phone here? - Gibt es hier eine öffentliche Telefonzelle?
+Can I get on the internet? - Kann ich ins Internet gehen?
+Can you help me? - Können Sie mir helfen?
+Where is the bathroom? - Wo ist das WC?</pre></h2>		 
+		</div>
+
+		<div class="fouruk">
+		<h2>TIPS</h2>
+<h2>
+<pre>
+Service and VAT are included in the menu price in restaurants, bars, etc. all over Germany.
+Still, it is typical to "round up" the amount to some more-or-less round figure.
+A rule of thumb is to add 5-10%, generally ending with a full Euro amount.
+This is entirely voluntary in Germany and people DO NOT expect tips, but like everywhere 
+they are grateful if given one. </pre></h2>
+		</div>
+
+		<div class="fourimguk">
+		<img src="tips.jpg" height="300px" width="100%">
+		</div>
+
+		<div id="fourinfouk" onmouseover="four();" text-align="left">
+		<h2>MORE INFO......</h2>
+		</div>
+
+		<div id="fourmoreinfouk" style="display:none;" onmouseout="four1();">
+<h2>
+<pre>
+Tipping in Germany and tipping in some other countries, such as the United States, are totally different.
+In Germany, waitresses are paid more and so the tips are smaller compared to the USA.
+Nevertheless, the 5-10% rule of  thumb still applies.
+If you want to tip less (according to some advice on the net) be prepared to appear stingy.
+Typically, the waiter/waitress always comes to you and tells you your total.
+You then tell him/her how much you will pay, i.e. the amount you owe plus any "rounding up" -- 
+for example, the waiter/waitress might say "€7.60;"  you hand him/her a €10 note and say "9 Euros."
+S/he then will give you €1 in change.
+While Germany is a leader in many areas of technology, it is decidedly not so in credit card acceptance.
+When eating out, visiting any store or trying to pay for just about anything, don't be surprised if the 
+response to your credit card is "Nein." 
+Most Germans still settle in cash or rely on debit cards called "EC" or "electronic cash" cards which are not
+logo-bearing and do not work like credit cards. While some hotels, restaurants and other venues will take credit cards, by far the majority does not. When shopping or consuming anything, it's always wise to ask in advance, otherwise you'll be expected to pay in cash. Personal checks are no longer used in Germany (having been replaced by EC cards), and Traveller's Checks often carry a substantial
+"service charge" for cashing them. 
+
+</pre></h2>
+		</div>
+
+		<div class="fiveuk">
+		<h1>CULTURE</h1>
+<h2>
+<pre> Germans have made tremendous contributions to classical music,
+ and the traditions of famous German or Austrian composers such as
+ Johann Sebastian Bach, Wolfgang Amadeus Mozart, Ludwig von Beethoven, 
+Johannes Brahms, Richard Wagner and Gustav Mahler live on today.
+With their penchant for precision and engineering, it is not surprising
+ that Germans have a strong tradition of printmaking by woodcut and engraving. 
+There is also a strong representation of all phases of architecture-
+ including Romanesque, Gothic, Classicist, Baroque,
+ Rococo and Renaissance
+ -represented in cathedrals, castles and public buildings.
+ One well-known example of classic German art
+ is the Brandenburg Gate,
+ a former city gate that is now used
+ to symbolize Berlin's unity.  </pre><h2>
+
+		</div>
+
+		<div class="fiveimguk">
+		<img src="culture-ger.jpeg" height="300px" width="100%">
+		</div>
+
+		<div id="fiveinfouk" onmouseover="five();" text-align="center">
+		<h2>MORE INFO......</h2>
+		</div>
+
+		<div id="fivemoreinfouk" style="display:none;" onmouseout="five1();">
+<h2><pre>
+German culture has spanned the entire German-speaking world. From its roots, culture in Germany has been shaped by major intellectual and popular currents in Europe, both religious and secular.
+ Historically Germany has been called Das Land der Dichter und Denker (the country of poets and thinkers).
+There are a number of public holidays in Germany. 
+The country is particularly known for its traditional Oktoberfest celebrations in Munich, 
+its carnival culture and globally influential Christmas customs known as Weihnachten.
+ 3 October has been the national day of Germany since 1990, celebrated as the German Unity Day 
+(Tag der Deutschen Einheit). The UNESCO inscribed 38 properties in Germany on the World Heritage List.
+Germany was the world's second most respected nation among 50 countries in 2013.
+A global opinion poll for the BBC revealed that Germany is recognized for having 
+the most positive influence in the world in 2011, 2013, and 2014.
+
+ </pre></h2>
+<img src="cuture-ger-info.jpeg" height="300px" width="40%">		 
+		</div>
+
+		<div class="sixuk">
+		<h2>TABOO</h2>
+<h2><pre>
+    5 Key Topics or Gestures to Avoid in Conversation
+
+    Anything related to World War II or the Holocaust.
+    Personal questions until the relationship is better established.
+    Work and family life are usually kept separate, so stick to the business at hand.
+    Current events and politics, unless you really know what you're talking about as it relates on a global basis.
+    Germany is a very proud culture, so avoid criticism of anything pertaining to Germany or the German people.
+</pre></h2>
+		</div>
+
+		<div class="siximguk">
+		<img src="taboo.jpg" height="300px" width="100%">
+		</div>
+
+		<div id="sixinfouk" onmouseover="six();" text-align="left">
+		<h2>MORE INFO......</h2>
+		</div>
+
+		<div id="sixmoreinfouk" style="display:none;" onmouseout="six1();">
+<h2><pre>
+Punctuality-Do not be late for even a minute. Arriving late is an insult.
+
+Hands-in-pockets-Keep your hands out of your pocket while speaking to Germans. They consider it slovenly behavior. Keep hands by your side.
+
+Chewing gum-Keep the gum in your pocket, where the hands used to be-ditto on slovenly behavior.
+
+Okay sign-The American A-Okay sign, (index finger and thumb forming a circle), is an obscene gesture, (calling a German an a—hole).
+
+Blowing nose-A German will leave the room, find a restroom or private area, and blow their nose. Honking into a handkerchief or tissue at a dinner or conference area is disturbing to Germans.
+
+Cleaning fingernails-This is probably a global taboo, but Germans prefer you clean and file fingernails in private.
+
+Opening windows-It may be warm. Not everyone showered that morning. Do not open a window to get a breeze. Germans fear a draft may lead to a fatal disease. You will hear ‘Es Ziet’ as soon as you touch the window.
+
+Flower colors-Flowers are a great gift in Germany. Red is for romance. Carnations signify mourning. Lilies and chrysanthemums are for funerals. Yellow roses are safe.
+
+First drink-Yes, you are thirsty after a long business or tourist day. As a guest, wait for the host to offer a toast before the first sip. Clink glasses or acknowledge everyone in the room. Reply by saying, ‘Prosit.’</pre></h2>
+		</div>
+	</div>
+	
+	<br><br><br><br><br>
+	
+	
+	<div class="footer">
+	        <table>
+                        <tr>
+<td class="b1"><br> <center> <img src="3.png" width="200px" height="150px"><br> Created by Beta bots<br>Call Us On:<br>8379657997 </center></td>
+<td class="b2"><center><br><a href="https://www.google.com" class="a1"> HOME</a> <br> <br><a href="https://www.google.com" class="a2"> PLACES</a> <br> <br> <a href="https://www.google.com" class="a3">FOOD </a><br><br> <a href="https://www.google.com" class="a4">INFO</a> <br><br><a href="https://www.google.com" class="a4"> LOGOUT </a></center></td>
+<td class="b3">FOLLOW US ON<br><br>
+        <table style="border-collapse:collapse;">
+        <tr>    
+                <td style="border-collapse:collapse;"><a href="https://www.facebook.com/"><img src="f.png" height="40px" width="40px"></a></td>
+  	        <td style="border-collapse:collapse;"><a href="https://twitter.com/login"><img src="t.png" height="40px" width="40px"></a></td>
+        </tr>
+        <tr>
+                <td style="border-collapse:collapse;"><a href="https://www.instagram.com/?hl=en"><img src="i.png" height="40px" width="40px"></a></td>
+   		<td style="border-collapse:collapse;"><a href="https://in.pinterest.com/"><img src="p.png" height="40px" width="40px"></a></td>
+        </tr>
+        </table>
+</td>
+<td class="b4"><br> We always want your <br>feedback <br><br>
+        <form>
+                <input type="textbox" placeholder="Type here..." ><br><br>
+  		<input type="email" placeholder="Your email..."><br>
+  		<input type="button" value="Submit"> 
+  	</form>
+</td></tr>
+</table></div>
+	
+
+
+	
+	
+
+	<script>
+
+		function one()
+			{
+			 document.getElementById('oneinfouk').style.display='none';
+			 document.getElementById('onemoreinfouk').style.display='block';
+			}
+		function one1()
+			{
+			 document.getElementById('oneinfouk').style.display='block';
+			 document.getElementById('onemoreinfouk').style.display='none';
+			}
+		function two()
+			{
+			 document.getElementById('twoinfouk').style.display='none';
+			 document.getElementById('twomoreinfouk').style.display='block';
+			}
+		function two1()
+			{
+			 document.getElementById('twoinfouk').style.display='block';
+			 document.getElementById('twomoreinfouk').style.display='none';
+			}
+		function three()
+			{
+			 document.getElementById('threeinfouk').style.display='none';
+			 document.getElementById('threemoreinfouk').style.display='block';
+			}
+		function three1()
+			{
+			 document.getElementById('threeinfouk').style.display='block';
+			 document.getElementById('threemoreinfouk').style.display='none';
+			}
+		function four()
+			{
+			 document.getElementById('fourinfouk').style.display='none';
+			 document.getElementById('fourmoreinfouk').style.display='block';
+			}
+		function four1()
+			{
+			 document.getElementById('fourinfouk').style.display='block';
+			 document.getElementById('fourmoreinfouk').style.display='none';
+			}
+		function five()
+			{
+			 document.getElementById('fiveinfouk').style.display='none';
+			 document.getElementById('fivemoreinfouk').style.display='block';
+			}
+		function five1()
+			{
+			 document.getElementById('fiveinfouk').style.display='block';
+			 document.getElementById('fivemoreinfouk').style.display='none';
+			}
+		function six()
+			{
+			 document.getElementById('sixinfouk').style.display='none';
+			 document.getElementById('sixmoreinfouk').style.display='block';
+			}
+		function six1()
+			{
+			 document.getElementById('sixinfouk').style.display='block';
+			 document.getElementById('sixmoreinfouk').style.display='none';
+			}
+	</script>
+
+</body>
+</html>

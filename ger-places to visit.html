@@ -1,0 +1,316 @@
+<!doctype html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text|Pacifico" rel="stylesheet"> 
+<style>
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(50px, auto);
+  
+}
+.four {
+  grid-column: 1 / 5;
+  grid-row: 1 / 2;
+  color:white;
+  font-size:30px;
+  font-family: 'Gloria Hallelujah', cursive;
+  background-color:#34084b;
+  border-radius:130px;
+}
+.five {
+  grid-column: 1 / 5;
+  grid-row: 1 / 2;
+  background-color:#34084b;
+  border-radius:35px;
+}
+.a1{
+text-decoration:none;
+color:white;
+}
+
+.a1:hover{
+color:#e6d911;
+}
+.a2{
+text-decoration:none;
+color:white;
+}
+.a2:hover{
+color:#e6d911;
+}
+.a3{
+text-decoration:none;
+color:white;
+}
+.a3:hover{
+color:#e6d911;
+}
+
+.a4{
+text-decoration:none;
+color:white;
+}
+.a4:hover{
+color
+text-decoration:none;
+color:#e6d911;
+}
+
+.a1:hover{
+color:#e6d911;
+}
+.a2{
+text-decoration:none;
+color:white;
+}
+.a2:hover{
+color:#e6d911;
+}
+.a3{
+text-decoration:none;
+color:white;
+}
+.a3:hover{
+color:#e6d911;
+}
+
+.a4{
+text-decoration:none;
+color:white;
+}
+.a4:hover{
+color:#e6d911;
+}
+
+.b1{
+color:white;
+width:320px;
+}
+
+.b2{
+color:white;
+width:320px;
+font-family: 'Ubuntu Condensed', sans-serif;
+font-size:25px;
+}
+
+.b3{
+color:white;
+width:320px;
+font-family: 'Ubuntu Condensed', sans-serif;
+font-size:25px;
+}
+
+.b4{
+color:white;
+width:320px;
+font-family: 'Ubuntu Condensed', sans-serif;
+font-size:25px;
+}:#e6d911;
+}
+
+.b1{
+color:white;
+width:320px;
+}
+
+.b2{
+color:white;
+width:320px;
+font-family: 'Ubuntu Condensed', sans-serif;
+font-size:25px;
+}
+
+.b3{
+color:white;
+width:320px;
+font-family: 'Ubuntu Condensed', sans-serif;
+font-size:25px;
+}
+
+.b4{
+color:white;
+width:320px;
+font-family: 'Ubuntu Condensed', sans-serif;
+font-size:25px;
+}
+#p{
+font-family:'Yanone Kaffeesatz',sans-serif;
+font-size:30px;
+}
+.pop{
+height:275px;
+width:275px;
+border-radius:15px;
+}
+.sld{
+height:600px;
+width:80%;
+border-radius:20px;
+background-color:#2b74c5;
+}
+.img{
+height:100%;
+width:100%;
+border-radius:20px;
+box-shadow: -5px 0 101px -5px #333888, 5px 0 5px -5px #333888;
+}
+.body{
+display:grid;
+grid-template-columns:repeat(50,1fr);
+grid-auto-rows:minmax(100px,auto);
+}
+#i1{grid-column:3/16;grid-row:2/5;opacity:1;box-shadow: -5px 0 101px -5px #333888, 5px 0 5px -5px #333888;border-radius:15px;}
+#i2{grid-column:19/33;grid-row:2/5;box-shadow: -5px 0 101px -5px #333888, 5px 0 5px -5px #333888;border-radius:15px;}
+#i3{grid-column:36/49;grid-row:2/5;box-shadow: -5px 0 101px -5px #333888, 5px 0 5px -5px #333888;border-radius:15px;}
+#i4{grid-column:3/16;grid-row:6/10;box-shadow: -5px 0 101px -5px #333888, 5px 0 5px -5px #333888;border-radius:15px;}
+#i5{grid-column:19/33;grid-row:6/10;box-shadow: -5px 0 101px -5px #333888, 5px 0 5px -5px #333888;border-radius:15px;}
+#i6{grid-column:36/49;grid-row:6/10;box-shadow: -5px 0 101px -5px #333888, 5px 0 5px -5px #333888;border-radius:15px;}
+#alert1{grid-column:3/16;
+grid-row:3/4;
+font-family: 'Pacifico', cursive;
+font-size:25px;
+}
+#alert2{grid-column:19/33;
+grid-row:3/4;
+font-family: 'Pacifico', cursive;
+font-size:25px;
+}
+#alert3{grid-column:36/49;
+grid-row:3/4;
+font-family: 'Pacifico', cursive;
+font-size:25px;
+}
+#alert4{grid-column:3/16;
+grid-row:7/8;
+font-family: 'Pacifico', cursive;
+font-size:25px;
+}
+#alert5{grid-column:19/33;
+grid-row:7/8;
+font-family: 'Pacifico', cursive;
+font-size:25px;
+}
+#alert6{grid-column:36/49;
+grid-row:7/8;
+font-family: 'Pacifico', cursive;
+font-size:25px;
+}
+</style>
+</head>
+<body style="background:linear-gradient(#323232,#ff3232,#cccc00);" onload="sld();" >
+<div class="wrapper">
+ <div class="four"><table><tr><td><center><img src="3.png" width="250px" height="200px"></center></td><td colspan="2">
+  <center><a href="ger-subpage.html" class="a1">HOME</a> &nbsp;&nbsp;|&nbsp;&nbsp;<a href="ger-places to visit.html" class="a2">PLACES&nbsp;&nbsp;</a>|&nbsp;&nbsp; <a href="ger-food.html" class="a3">FOOD&nbsp;&nbsp;</a>|&nbsp;&nbsp; <a href="ger-practicalinfo.html" class="a4">INFO</a>&nbsp;&nbsp;|&nbsp;&nbsp; <a href="show.php" class="a4">LOGOUT</a></td></tr></table></center></div></div>
+  <br>
+<center><div>
+<pre  style="font-family:'Dancing Script',cursive;font-size:100px;color:#cccc00;text-align:right;font-weight:bold;"> Places to visit  </pre></div>
+<center><div class="sld"><img  class="img" id="i" src="main-pic.jpg"></div><div id="p"><p id="para">Click the image</p></div></center>
+<div class="body">
+
+
+
+
+<img src="ger-sub-main-bgi.jpeg"width="100%" height="300px" id="i1"onclick="h();"onmouseover="document.getElementById('alert1').innerHTML='Cologne Cathedral'; document.getElementById('i1').style.opacity='0.5';" onmouseout="document.getElementById('alert1').innerHTML='';document.getElementById('i1').style.opacity='1';"><p id="alert1"></p>
+
+
+<img src="westfalenstadion.jpg"width="100%" height="300px" id="i2"onclick="l();"onmouseover="document.getElementById('alert2').innerHTML='Signal Iduna Park';document.getElementById('i2').style.opacity='0.5';" onmouseout="document.getElementById('alert2').innerHTML='';document.getElementById('i2').style.opacity='1';"><p id="alert2"></p>
+
+
+<img src="mPh.jpg"width="100%" height="300px" id="i3"onclick="v();"onmouseover="document.getElementById('alert3').innerHTML='Berlin Wall';document.getElementById('i3').style.opacity='0.5';" onmouseout="document.getElementById('alert3').innerHTML='';document.getElementById('i3').style.opacity='1';"><p id="alert3"></p>
+
+<img src="BG-main.jpg"width="100%" height="300px" id="i4"onclick="e();"onmouseover="document.getElementById('alert4').innerHTML='Brandenburg Gate';document.getElementById('i4').style.opacity='0.5';" onmouseout="document.getElementById('alert4').innerHTML='';document.getElementById('i4').style.opacity='1';"><p id="alert4"></p>
+
+<img src="NC-main.jpg"width="100%" height="300px" id="i5"onclick="a();"onmouseover="document.getElementById('alert5').innerHTML='Neuschwanstein Castle';document.getElementById('i5').style.opacity='0.5';" onmouseout="document.getElementById('alert5').innerHTML='';document.getElementById('i5').style.opacity='1';"><p id="alert5"></p>
+
+
+<img src="CC-Main.jpg"width="100%" height="300px" id="i6"onclick="dis();"onmouseover="document.getElementById('alert6').innerHTML='Checkpoint Charlie';document.getElementById('i6').style.opacity='0.5';" onmouseout="document.getElementById('alert6').innerHTML='';document.getElementById('i6').style.opacity='1';"><p id="alert6"></p>
+</div>
+
+  <div class="wrapper">
+  <div class="five"> <table>
+  <tr>
+  <td class="b1"><br> <center> <img src="3.png" width="200px" height="150px"><br> Created by Beta bots<br>Call Us On:<br>8379657997 </center></td>
+  <td class="b2"><center><br><a href="ger-subpage.html" class="a1"> HOME</a> <br> <br><a href="ger-places to visit.html" class="a2"> PLACES</a> <br> <br> <a href="ger-food.html" class="a3">FOOD </a><br><br> <a href="ger-practicalinfo.html" class="a4">INFO</a> <br><br><a href="show.php" class="a4"> LOGOUT </a></center></td>
+  <td class="b3">FOLLOW US ON<br><br>
+  <table style="border-collapse:collapse;">
+  <tr><td style="border-collapse:collapse;"><a href="https://www.facebook.com/"><img src="f.png" height="40px" width="40px"></a></td>
+  			<td style="border-collapse:collapse;"><a href="https://twitter.com/login"><img src="t.png" height="40px" width="40px"></a></td>
+  </tr>
+   <tr><td style="border-collapse:collapse;"><a href="https://www.instagram.com/?hl=en"><img src="i.png" height="40px" width="40px"></a></td>
+   		<td style="border-collapse:collapse;"><a href="https://in.pinterest.com/"><img src="p.png" height="40px" width="40px"></a></td>
+   </tr>
+   </table>
+   </td>
+  <td class="b4"><br> We always want your <br>feedback <br><br>
+  <form><input type="textbox" placeholder="Type here..." ><br><br>
+  				<input type="email" placeholder="Your email..."><br>
+  				<input type="button" value="Submit"> 
+  	</form></td>  
+  </tr>
+  </table>
+   </div></div>
+<script>
+var l1=["SIP-1.jpg", "SIP-2.jpg","SIP-3.jpg"];
+var h1=["col-1.jpg","col-2.jpg","col-3.jpg","col-4.jpg"];
+var v1=["GW-1.jpg","GW-2.jpg","GW-3.jpg"]
+var e1=["BG-1.jpg","BG-2.jpeg","BG-3.jpg"];
+var a1=["NC-1.jpeg","NC-2.jpg","NC-3.jpg"];
+var d1=["CC-1.jpg","CC-2.jpg","CC-3.jpg"];
+var o1=["main-pic.jpg"];
+var x;
+
+var i=0;
+function sld()
+{
+   
+  document.getElementById("i").src=o1[i];
+  i++;
+  if(i>=o1.length)i=0;
+  setTimeout(sld,2000);
+}
+function h()
+{
+  o1=h1;
+  x="<h1>Cologne Cathedral</h1><p>Cologne Cathedral (German: Kölner Dom, officially Hohe Domkirche Sankt Petrus, Latin: Ecclesia Cathedralis Sanctorum Petri, English: Cathedral Church of Saint Peter) is a Roman Catholic cathedral in Cologne, Germany. It is the seat of the Archbishop of Cologne and of the administration of the Archdiocese of Cologne. It is a renowned monument of German Catholicism and Gothic architecture and was declared a World Heritage Site in 1996.It is Germany's most visited landmark, attracting an average of 20,000 people a day and currently the tallest twin-spired church at 157 m (515 ft) tall.Construction of Cologne Cathedral commenced in 1248 and was halted in 1473, leaving it unfinished. Work restarted in the 19th century and was completed, to the original plan, in 1880.The cathedral is the largest Gothic church in Northern Europe and has the second-tallest spires. The towers for its two huge spires give the cathedral the largest façade of any church in the world. The choir has the largest height to width ratio, 3.6:1, of any medieval church.Cologne's medieval builders had planned a grand structure to house the reliquary of the Three Kings and fit its role as a place of worship for the Holy Roman Emperor. Despite having been left incomplete during the medieval period, Cologne Cathedral eventually became unified as a masterpiece of exceptional intrinsic value and a powerful testimony to the strength and persistence of Christian belief in medieval and modern Europe</p>";
+  document.getElementById("para").innerHTML=x;
+}
+function l()
+{
+o1=l1;
+x="<h1>Westfalenstadion</h1><p>Westfalenstadion (German pronunciation: [vɛstˈfaːlnˌʃtaːdi̯ɔn])[5] is a football stadium in Dortmund, North Rhine-Westphalia, Germany, which is the home of Bundesliga club Borussia Dortmund. Officially called Signal Iduna Park [zɪɡˌnaːl ʔiˈduːnaː ˌpaʁk] for sponsorship reasons, the name derives from the former Prussian province of Westphalia.The stadium is one of the most famous football grounds in Europe and is renowned for its atmosphere.It has a league capacity of 81,360 (standing and seated) and an international capacity of 65,829 (seated only). It is Germany's largest stadium, the seventh-largest in Europe, and the third-largest home to a top-flight European club after Camp Nou and the Santiago Bernabéu Stadium. It holds the European record for average fan attendance, set in the 2011–2012 season with almost 1.37 million spectators.Sales of annual season tickets amounted to 55,000 in 2015.The 24,454 capacity Südtribüne (South Bank) is the largest terrace for standing spectators in European football.Famous for the intense atmosphere it breeds, the south terrace has been nicknamed the 'Yellow Wall'.The Borusseum, the museum of Borussia Dortmund, is near the stadium.The stadium hosted matches in the 1974 and 2006 FIFA World Cups. It also hosted the 2001 UEFA Cup Final. Various national friendlies and qualification matches for World and European tournaments have been played there as well as matches in European club competitions.</p>";
+document.getElementById("para").innerHTML=x;
+}
+function v()
+{
+o1=v1;
+x="<h1>The Berlin Wall (German: Berliner Mauer) was a guarded concrete barrier that physically and ideologically divided Berlin from 1961 to 1989.Constructed by the German Democratic Republic (GDR, East Germany), starting on 13 August 1961, the Wall cut off (by land) West Berlin from virtually all of surrounding East Germany and East Berlin until government officials opened it in November 1989. Its demolition officially began on 13 June 1990 and finished in 1992. The barrier included guard towers placed along large concrete walls, accompanied by a wide area (later known as the death strip) that contained anti-vehicle trenches, fakir beds and other defenses. The Eastern Bloc portrayed the Wall as protecting its population from fascist elements conspiring to prevent the will of the people in building a socialist state in East Germany. In practice, the Wall served to prevent the massive emigration and defection that had marked East Germany and the communist Eastern Bloc during the post-World War II period.GDR authorities officially referred to the Berlin Wall as the Anti-Fascist Protection Rampart (German: Antifaschistischer Schutzwall), by implication equating the NATO countries (and West Germany in particular) with fascists. The West Berlin city government sometimes referred to it as the Wall of Shame, a term coined by mayor Willy Brandt in reference to the Wall restriction on freedom of movement. Along with the separate and much longer Inner German border (IGB), which demarcated the border between East and West Germany, it came to symbolize physically the Iron Curtain that separated Western Europe and the Eastern Bloc during the Cold War.Before the Wall erection, 3.5 million East Germans circumvented Eastern Bloc emigration restrictions and defected from the GDR, many by crossing over the border from East Berlin into West Berlin; from which they could then travel to West Germany and to other Western European countries. Between 1961 and 1989 the Wall prevented almost all such emigration.During this period around 5,000 people attempted to escape over the Wall, with an estimated death toll ranging from 136 to more than 200 in and around Berlin.In 1989 a series of revolutions in nearby Eastern Bloc countries—Poland and Hungary in particular—caused a chain reaction in East Germany that ultimately resulted in the demise of the Wall. After several weeks of civil unrest, the East German government announced on 9 November 1989 that all GDR citizens could visit West Germany and West Berlin. Crowds of East Germans crossed and climbed onto the Wall, joined by West Germans on the other side in a celebratory atmosphere. Over the next few weeks, euphoric people and souvenir hunters chipped away parts of the Wall; the governments later used industrial equipment to remove most of what was left. Contrary to popular belief, the Wall actual demolition did not begin until the summer of 1990 and continued until 1992.[1] The fall of the Berlin Wall paved the way for German reunification, which formally took place on 3 October 1990.</p>";
+document.getElementById("para").innerHTML=x;
+}
+function e()
+{
+o1=e1;
+x="<h1>Brandenburg Gate</h1><p> The Brandenburg Gate (German: Brandenburger Tor) is an 18th-century neoclassical monument in Berlin, built on the orders of Prussian king Frederick William II after the (temporarily) successful restoration of order during the early Batavian Revolution.[1] One of the best-known landmarks of Germany, it was built on the site of a former city gate that marked the start of the road from Berlin to the town of Brandenburg an der Havel, which used to be capital of the Margraviate of Brandenburg.It is located in the western part of the city centre of Berlin within Mitte, at the junction of Unter den Linden and Ebertstraße, immediately west of the Pariser Platz. One block to the north stands the Reichstag building, which houses the German parliament (Bundestag). The gate is the monumental entry to Unter den Linden, the renowned boulevard of linden trees, which led directly to the royal City Palace of the Prussian monarchs.Throughout its existence, the Brandenburg Gate was often a site for major historical events and is today considered not only as a symbol of the tumultuous history of Europe and Germany, but also of European unity and peace.</p>";
+document.getElementById("para").innerHTML=x;
+}
+
+function a()
+{
+o1=a1;
+x="<h1>Neuschwanstein Castle</h1><p>Neuschwanstein Castle (German: Schloss Neuschwanstein, pronounced [nɔʏˈʃvaːnʃtaɪn], English:New Swanstone Castle) is a 19th-century Romanesque Revival palace on a rugged hill above the village of Hohenschwangau near Füssen in southwest Bavaria, Germany. The palace was commissioned by Ludwig II of Bavaria as a retreat and as a homage to Richard Wagner. Ludwig paid for the palace out of his personal fortune and by means of extensive borrowing, rather than Bavarian public funds.The castle was intended as a home for the king, until he died in 1886. It was open to the public shortly after his death. Since then more than 61 million people have visited Neuschwanstein Castle. More than 1.3 million people visit annually, with as many as 6,000 per day in the summer.[4] The palace has appeared prominently in several movies such as Chitty Chitty Bang Bang and The Great Escape and serves as the inspiration for Disneyland's Sleeping Beauty Castle and later, similar structures.</p>";
+document.getElementById("para").innerHTML=x;
+}
+function dis()
+{
+o1=d1;
+x="<h1>Checkpoint Charlie</h1><p>Checkpoint Charlie (or Checkpoint C) was the name given by the Western Allies to the best-known Berlin Wall crossing point between East Berlin and West Berlin during the Cold War (1947-1991).East German leader Walter Ulbricht agitated and maneuvered to get the Soviet Union's permission to construct the Berlin Wall in 1961 to stop Eastern Bloc emigration and defection westward through the Soviet border system, preventing escape across the city sector border from communist East Berlin into West Berlin. Checkpoint Charlie became a symbol of the Cold War, representing the separation of East and West. Soviet and American tanks briefly faced each other at the location during the Berlin Crisis of 1961.After the dissolution of the Eastern Bloc and the reunification of Germany, the building at Checkpoint Charlie became a tourist attraction. It is now located in the Allied Museum in the Dahlem neighborhood of Berlin.</p>";
+document.getElementById("para").innerHTML=x;
+}
+</script>
+</body>
+</html>
